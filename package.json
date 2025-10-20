@@ -1,0 +1,15 @@
+{
+  "name": "mcp-servers",
+  "version": "1.0.0",
+  "description": "MCP Server Configuration",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/server-filesystem": "latest",
+    "@modelcontextprotocol/server-github": "latest",
+    "@modelcontextprotocol/server-postgres": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "postinstall": "echo 'MCP servers installed successfully'"
+  }
+}
