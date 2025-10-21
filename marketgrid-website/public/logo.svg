@@ -1,43 +1,53 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background Grid Pattern -->
   <defs>
-    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    <!-- Premium gradient - Deep Navy to Professional Blue -->
+    <linearGradient id="premiumGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#001E3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066CC;stop-opacity:1" />
     </linearGradient>
 
-    <pattern id="gridPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E2E8F0" stroke-width="0.5"/>
-    </pattern>
+    <!-- Subtle shine effect -->
+    <radialGradient id="shineEffect" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#0066CC;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#001E3C;stop-opacity:0" />
+    </radialGradient>
   </defs>
 
-  <!-- Grid Background Circle -->
-  <circle cx="100" cy="100" r="95" fill="url(#gridPattern)" opacity="0.3"/>
+  <!-- Subtle background -->
+  <circle cx="100" cy="100" r="92" fill="url(#shineEffect)"/>
 
-  <!-- Main M Shape (formed by grid nodes) -->
-  <g id="mgLogo">
-    <!-- Left vertical line -->
-    <line x1="50" y1="70" x2="50" y2="130" stroke="url(#brandGradient)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Main geometric monogram - Abstract "M" representing data/grid -->
+  <g id="mgMonogram">
+    <!-- Left pillar - solid and strong -->
+    <rect x="48" y="58" width="14" height="84" fill="#001E3C" rx="2"/>
 
-    <!-- Left diagonal -->
-    <line x1="50" y1="70" x2="100" y2="100" stroke="url(#brandGradient)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Right pillar -->
+    <rect x="138" y="58" width="14" height="84" fill="#001E3C" rx="2"/>
 
-    <!-- Right diagonal -->
-    <line x1="100" y1="100" x2="150" y2="70" stroke="url(#brandGradient)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Top connecting bar -->
+    <rect x="48" y="58" width="104" height="14" fill="#001E3C" rx="2"/>
 
-    <!-- Right vertical line -->
-    <line x1="150" y1="70" x2="150" y2="130" stroke="url(#brandGradient)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Center peak - distinctive element (data ascending) -->
+    <path d="M 100 58 L 85 95 L 92 95 L 100 76 L 108 95 L 115 95 Z" fill="#0066CC"/>
 
-    <!-- Data points (nodes) -->
-    <circle cx="50" cy="70" r="6" fill="#3B82F6"/>
-    <circle cx="50" cy="130" r="6" fill="#3B82F6"/>
-    <circle cx="100" cy="100" r="6" fill="#06B6D4"/>
-    <circle cx="150" cy="70" r="6" fill="#3B82F6"/>
-    <circle cx="150" cy="130" r="6" fill="#3B82F6"/>
+    <!-- Subtle grid pattern - minimalist -->
+    <line x1="76" y1="58" x2="76" y2="142" stroke="#0066CC" stroke-width="1.5" opacity="0.25"/>
+    <line x1="100" y1="58" x2="100" y2="142" stroke="#0066CC" stroke-width="1.5" opacity="0.25"/>
+    <line x1="124" y1="58" x2="124" y2="142" stroke="#0066CC" stroke-width="1.5" opacity="0.25"/>
 
-    <!-- Grid connection indicators (smaller dots) -->
-    <circle cx="75" cy="85" r="3" fill="#06B6D4" opacity="0.6"/>
-    <circle cx="125" cy="85" r="3" fill="#06B6D4" opacity="0.6"/>
-    <circle cx="100" cy="115" r="3" fill="#06B6D4" opacity="0.4"/>
+    <!-- Horizontal precision lines -->
+    <line x1="48" y1="90" x2="152" y2="90" stroke="#0066CC" stroke-width="1" opacity="0.15"/>
+    <line x1="48" y1="110" x2="152" y2="110" stroke="#0066CC" stroke-width="1" opacity="0.15"/>
+
+    <!-- Corner accents - premium detail -->
+    <circle cx="48" cy="58" r="5" fill="#0066CC" opacity="0.9"/>
+    <circle cx="152" cy="58" r="5" fill="#0066CC" opacity="0.9"/>
+    <circle cx="48" cy="142" r="5" fill="#001E3C" opacity="0.8"/>
+    <circle cx="152" cy="142" r="5" fill="#001E3C" opacity="0.8"/>
+
+    <!-- Data nodes - subtle -->
+    <circle cx="76" cy="90" r="2.5" fill="#0066CC" opacity="0.6"/>
+    <circle cx="124" cy="90" r="2.5" fill="#0066CC" opacity="0.6"/>
+    <circle cx="100" cy="110" r="2.5" fill="#0066CC" opacity="0.4"/>
   </g>
 </svg>
