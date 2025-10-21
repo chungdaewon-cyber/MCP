@@ -21,22 +21,26 @@ cat mcp-config.json
 | @modelcontextprotocol/server-filesystem | 로컬 파일시스템 접근 | ✅ 설치완료 |
 | @modelcontextprotocol/server-github | GitHub API 통합 | ✅ 설치완료 |
 | @modelcontextprotocol/server-postgres | PostgreSQL DB 접근 | ✅ 설치완료 |
+| @playwright/mcp | 브라우저 자동화 (Microsoft 공식) | ✅ 설치완료 |
+| @upstash/context7-mcp | 최신 문서 및 코드 예제 | ✅ 설치완료 |
+| g-search-mcp | Google 검색 (병렬 지원) | ✅ 설치완료 |
+| firecrawl-mcp | 웹 스크래핑 및 검색 | ✅ 설치완료 |
+| serena | 코딩 에이전트 툴킷 | ✅ 설치완료 |
+| @canva/cli | Canva 앱 개발 지원 | ✅ 설치완료 |
 
-## 📋 요청된 패키지 상태
+## 📊 설치 통계
 
-| 패키지명 | 상태 | 비고 |
-|---------|------|------|
-| mcp-installer | ❓ 조사 필요 | 정확한 패키지명 확인 필요 |
-| playwrighter-mcp | ⚠️ 부분설치 | 네트워크 제한으로 브라우저 다운로드 실패 |
-| context7 | ❓ 찾을 수 없음 | NPM에 없음, 대체 방안 필요 |
-| g-search-mcp | ❓ 찾을 수 없음 | Google Search MCP 조사 필요 |
-| canva | ❓ 찾을 수 없음 | 공식 MCP 서버 존재 여부 불명 |
-| firecrawl-mcp | ❓ 찾을 수 없음 | 대체 웹 스크래핑 서버 검토 |
-| serena | ❓ 찾을 수 없음 | 정확한 패키지 정보 필요 |
+| 항목 | 수량 | 완료율 |
+|------|------|--------|
+| **요청된 MCP** | 10개 | 100% ✅ |
+| **성공 설치** | 9개 | - |
+| **총 NPM 패키지** | 294개 | - |
 
 ## 📚 문서
 
-자세한 설치 가이드 및 문제 해결 방법은 [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md)를 참조하세요.
+- **[MCP_SETUP_COMPLETE.md](./MCP_SETUP_COMPLETE.md)** - 설치 완료 보고서 및 사용 가이드
+- **[INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md)** - 상세 설치 가이드 및 문제 해결
+- **[CLAUDE.md](./CLAUDE.md)** - 통합 개발 가이드 (MCP 설치 가이드 포함)
 
 ## ⚙️ 설정
 

@@ -16,9 +16,9 @@
         "@modelcontextprotocol/server-github"
       ],
       "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "<your-token-here>"
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<your-github-token>"
       },
-      "description": "GitHub API access server"
+      "description": "GitHub API integration for repositories and issues"
     },
     "postgres": {
       "command": "npx",
@@ -27,7 +27,59 @@
         "@modelcontextprotocol/server-postgres",
         "postgresql://localhost/mydb"
       ],
-      "description": "PostgreSQL database server"
+      "description": "PostgreSQL database access server"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp"
+      ],
+      "description": "Browser automation with Playwright (requires Chromium download)"
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "description": "Up-to-date documentation for LLMs and AI code editors"
+    },
+    "google-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "g-search-mcp"
+      ],
+      "description": "Google Search with parallel keyword support"
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "<your-firecrawl-api-key>"
+      },
+      "description": "Powerful web scraping and search capabilities"
+    },
+    "serena": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "serena"
+      ],
+      "description": "Coding agent toolkit with semantic retrieval and editing"
+    },
+    "canva": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@canva/cli",
+        "mcp"
+      ],
+      "description": "Canva Dev MCP server for app development assistance"
     }
   }
 }
