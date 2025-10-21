@@ -1,0 +1,37 @@
+<svg width="800" height="200" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Icon -->
+  <g id="icon" transform="translate(20, 0)">
+    <!-- Left vertical line -->
+    <line x1="50" y1="70" x2="50" y2="130" stroke="url(#brandGradient)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Left diagonal -->
+    <line x1="50" y1="70" x2="100" y2="100" stroke="url(#brandGradient)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Right diagonal -->
+    <line x1="100" y1="100" x2="150" y2="70" stroke="url(#brandGradient)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Right vertical line -->
+    <line x1="150" y1="70" x2="150" y2="130" stroke="url(#brandGradient)" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Data points -->
+    <circle cx="50" cy="70" r="6" fill="#3B82F6"/>
+    <circle cx="50" cy="130" r="6" fill="#3B82F6"/>
+    <circle cx="100" cy="100" r="6" fill="#06B6D4"/>
+    <circle cx="150" cy="70" r="6" fill="#3B82F6"/>
+    <circle cx="150" cy="130" r="6" fill="#3B82F6"/>
+  </g>
+
+  <!-- Company Name -->
+  <text x="230" y="115" font-family="Montserrat, sans-serif" font-size="48" font-weight="700" fill="#0F172A">
+    Market<tspan fill="#3B82F6">grid</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="230" y="145" font-family="Inter, sans-serif" font-size="16" font-weight="400" fill="#64748B" letter-spacing="2">
+    AI-POWERED DEMAND INTELLIGENCE
+  </text>
+</svg>
