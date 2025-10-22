@@ -4,7 +4,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-brand-light to-white">
+      <section className="py-20 bg-gradient-to-b from-brand-gray-50 to-white">
         <div className="section-container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -267,7 +267,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Industry Solutions */}
-      <section className="py-20 bg-gradient-to-b from-brand-light to-white">
+      <section className="py-20 bg-gradient-to-b from-brand-gray-50 to-white">
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">

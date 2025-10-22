@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center hero-grid bg-gradient-to-b from-brand-light to-white overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center hero-grid bg-gradient-to-b from-brand-gray-50 to-white overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden opacity-20">
           <div className="absolute top-20 left-10 w-72 h-72 bg-brand-secondary rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -123,7 +123,7 @@ export default function HomePage() {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-20 bg-gradient-to-b from-brand-light to-white">
+      <section className="py-20 bg-gradient-to-b from-brand-gray-50 to-white">
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">

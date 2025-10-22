@@ -1,53 +1,74 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Deloitte-inspired Data Grid Logo -->
   <defs>
-    <!-- Premium gradient - Deep Navy to Professional Blue -->
-    <linearGradient id="premiumGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#001E3C;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0066CC;stop-opacity:1" />
+    <!-- Deloitte Green accent -->
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#86BC24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B9B1E;stop-opacity:1" />
     </linearGradient>
-
-    <!-- Subtle shine effect -->
-    <radialGradient id="shineEffect" cx="50%" cy="30%">
-      <stop offset="0%" style="stop-color:#0066CC;stop-opacity:0.2" />
-      <stop offset="100%" style="stop-color:#001E3C;stop-opacity:0" />
-    </radialGradient>
   </defs>
 
-  <!-- Subtle background -->
-  <circle cx="100" cy="100" r="92" fill="url(#shineEffect)"/>
-
-  <!-- Main geometric monogram - Abstract "M" representing data/grid -->
-  <g id="mgMonogram">
-    <!-- Left pillar - solid and strong -->
-    <rect x="48" y="58" width="14" height="84" fill="#001E3C" rx="2"/>
-
-    <!-- Right pillar -->
-    <rect x="138" y="58" width="14" height="84" fill="#001E3C" rx="2"/>
-
-    <!-- Top connecting bar -->
-    <rect x="48" y="58" width="104" height="14" fill="#001E3C" rx="2"/>
-
-    <!-- Center peak - distinctive element (data ascending) -->
-    <path d="M 100 58 L 85 95 L 92 95 L 100 76 L 108 95 L 115 95 Z" fill="#0066CC"/>
-
-    <!-- Subtle grid pattern - minimalist -->
-    <line x1="76" y1="58" x2="76" y2="142" stroke="#0066CC" stroke-width="1.5" opacity="0.25"/>
-    <line x1="100" y1="58" x2="100" y2="142" stroke="#0066CC" stroke-width="1.5" opacity="0.25"/>
-    <line x1="124" y1="58" x2="124" y2="142" stroke="#0066CC" stroke-width="1.5" opacity="0.25"/>
-
-    <!-- Horizontal precision lines -->
-    <line x1="48" y1="90" x2="152" y2="90" stroke="#0066CC" stroke-width="1" opacity="0.15"/>
-    <line x1="48" y1="110" x2="152" y2="110" stroke="#0066CC" stroke-width="1" opacity="0.15"/>
-
-    <!-- Corner accents - premium detail -->
-    <circle cx="48" cy="58" r="5" fill="#0066CC" opacity="0.9"/>
-    <circle cx="152" cy="58" r="5" fill="#0066CC" opacity="0.9"/>
-    <circle cx="48" cy="142" r="5" fill="#001E3C" opacity="0.8"/>
-    <circle cx="152" cy="142" r="5" fill="#001E3C" opacity="0.8"/>
-
-    <!-- Data nodes - subtle -->
-    <circle cx="76" cy="90" r="2.5" fill="#0066CC" opacity="0.6"/>
-    <circle cx="124" cy="90" r="2.5" fill="#0066CC" opacity="0.6"/>
-    <circle cx="100" cy="110" r="2.5" fill="#0066CC" opacity="0.4"/>
+  <!-- Data Grid Background - visible structure -->
+  <g id="gridStructure" opacity="0.15">
+    <!-- Vertical grid lines -->
+    <line x1="55" y1="50" x2="55" y2="150" stroke="#000000" stroke-width="1"/>
+    <line x1="75" y1="50" x2="75" y2="150" stroke="#000000" stroke-width="1"/>
+    <line x1="95" y1="50" x2="95" y2="150" stroke="#000000" stroke-width="1"/>
+    <line x1="115" y1="50" x2="115" y2="150" stroke="#000000" stroke-width="1"/>
+    <line x1="135" y1="50" x2="135" y2="150" stroke="#000000" stroke-width="1"/>
+    <!-- Horizontal grid lines -->
+    <line x1="35" y1="70" x2="165" y2="70" stroke="#000000" stroke-width="1"/>
+    <line x1="35" y1="90" x2="165" y2="90" stroke="#000000" stroke-width="1"/>
+    <line x1="35" y1="110" x2="165" y2="110" stroke="#000000" stroke-width="1"/>
+    <line x1="35" y1="130" x2="165" y2="130" stroke="#000000" stroke-width="1"/>
   </g>
+
+  <!-- Main Grid Frame - Bold outline -->
+  <rect x="35" y="50" width="130" height="100" fill="none" stroke="#000000" stroke-width="3"/>
+
+  <!-- Data Cells - Ascending demand visualization -->
+  <g id="dataCells">
+    <!-- Row 1 - Low demand (bottom) -->
+    <rect x="35" y="130" width="20" height="20" fill="#000000" opacity="0.2"/>
+    <rect x="55" y="130" width="20" height="20" fill="#000000" opacity="0.25"/>
+    <rect x="75" y="130" width="20" height="20" fill="#000000" opacity="0.3"/>
+
+    <!-- Row 2 - Medium demand -->
+    <rect x="55" y="110" width="20" height="20" fill="#000000" opacity="0.35"/>
+    <rect x="75" y="110" width="20" height="20" fill="#000000" opacity="0.4"/>
+    <rect x="95" y="110" width="20" height="20" fill="#000000" opacity="0.45"/>
+
+    <!-- Row 3 - High demand -->
+    <rect x="75" y="90" width="20" height="20" fill="#000000" opacity="0.5"/>
+    <rect x="95" y="90" width="20" height="20" fill="#000000" opacity="0.6"/>
+    <rect x="115" y="90" width="20" height="20" fill="#86BC24" opacity="0.7"/>
+
+    <!-- Row 4 - Peak demand (Deloitte Green) -->
+    <rect x="95" y="70" width="20" height="20" fill="#86BC24" opacity="0.85"/>
+    <rect x="115" y="70" width="20" height="20" fill="#86BC24"/>
+    <rect x="135" y="70" width="20" height="20" fill="#86BC24"/>
+  </g>
+
+  <!-- Ascending trend line - data insight -->
+  <polyline
+    points="45,145 65,135 85,120 105,100 125,80 145,65"
+    fill="none"
+    stroke="#86BC24"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Data points on trend line -->
+  <circle cx="45" cy="145" r="3" fill="#000000"/>
+  <circle cx="65" cy="135" r="3" fill="#000000"/>
+  <circle cx="85" cy="120" r="3" fill="#000000"/>
+  <circle cx="105" cy="100" r="3" fill="#86BC24"/>
+  <circle cx="125" cy="80" r="4" fill="#86BC24"/>
+  <circle cx="145" cy="65" r="5" fill="#86BC24"/>
+
+  <!-- Grid label accent - "M" for Marketgrid -->
+  <text x="40" y="46" font-family="'Arial Black', sans-serif" font-size="12" font-weight="900" fill="#000000" opacity="0.6">
+    M
+  </text>
 </svg>

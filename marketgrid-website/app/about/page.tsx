@@ -55,9 +55,9 @@ export default function AboutPage() {
 
           {/* Mission Section */}
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-            <div className="order-2 md:order-1 bg-brand-light rounded-2xl p-12">
+            <div className="order-2 md:order-1 bg-brand-gray-50 rounded-2xl p-12">
               <div className="text-6xl mb-6">🚀</div>
-              <div className="text-3xl font-bold mb-4 text-brand-dark">핵심 미션</div>
+              <div className="text-3xl font-bold mb-4 text-brand-black-900">핵심 미션</div>
               <ul className="space-y-3 text-lg text-gray-700">
                 <li className="flex items-start space-x-2">
                   <span className="text-2xl text-brand-secondary">1</span>

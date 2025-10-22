@@ -44,7 +44,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-brand-light to-white">
+      <section className="py-20 bg-gradient-to-b from-brand-gray-50 to-white">
         <div className="section-container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -253,7 +253,7 @@ export default function ContactPage() {
               </div>
 
               {/* Why Choose Us */}
-              <div className="card bg-brand-light">
+              <div className="card bg-brand-gray-50">
                 <h3 className="text-xl font-bold mb-4">왜 Marketgrid를 선택해야 할까요?</h3>
                 <ul className="space-y-3">
                   {[
@@ -285,7 +285,7 @@ export default function ContactPage() {
                   ].map((question, idx) => (
                     <button
                       key={idx}
-                      className="w-full text-left p-3 bg-brand-light rounded-lg hover:bg-brand-secondary hover:text-white transition-colors"
+                      className="w-full text-left p-3 bg-brand-gray-50 rounded-lg hover:bg-brand-secondary hover:text-white transition-colors"
                     >
                       <div className="flex items-center justify-between">
                         <span className="text-sm">{question}</span>
@@ -303,7 +303,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section (Placeholder) */}
-      <section className="py-20 bg-gradient-to-b from-brand-light to-white">
+      <section className="py-20 bg-gradient-to-b from-brand-gray-50 to-white">
         <div className="section-container">
           <h2 className="text-3xl font-bold text-center mb-8">오시는 길</h2>
           <div className="max-w-5xl mx-auto">

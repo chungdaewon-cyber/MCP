@@ -5,34 +5,34 @@
 @layer base {
   :root {
     --background: 255 255 255;
-    --foreground: 0 30 60;
+    --foreground: 0 0 0;
   }
 
-  /* Premium body styling */
+  /* Deloitte-inspired body styling */
   body {
-    @apply bg-white text-brand-gray-900 font-body antialiased;
+    @apply bg-white text-brand-black-900 font-body antialiased;
     font-feature-settings: 'kern' 1, 'liga' 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Premium typography hierarchy */
+  /* Bold typography hierarchy - Deloitte style */
   h1 {
-    @apply font-display font-bold text-brand-navy-900 tracking-tight;
+    @apply font-display font-black text-brand-black-900 tracking-tight;
   }
 
   h2, h3, h4, h5, h6 {
-    @apply font-display font-semibold text-brand-navy-900 tracking-tight;
+    @apply font-display font-bold text-brand-black-900 tracking-tight;
   }
 
-  /* Refined paragraph styling */
+  /* Clean paragraph styling */
   p {
     @apply text-brand-gray-700 leading-relaxed;
   }
 
-  /* Link styling */
+  /* Link styling with Deloitte green */
   a {
-    @apply text-brand-secondary hover:text-brand-blue-600 transition-colors duration-200;
+    @apply text-brand-secondary hover:text-brand-green-600 transition-colors duration-200;
   }
 }
 
@@ -51,36 +51,45 @@
     @apply bg-premium-gradient bg-clip-text text-transparent;
   }
 
-  /* McKinsey-style buttons */
+  /* Deloitte-style buttons */
   .btn-primary {
     @apply inline-flex items-center justify-center px-8 py-4
-           bg-brand-navy-900 text-white font-semibold
-           rounded-none hover:bg-brand-navy-800
-           shadow-subtle hover:shadow-premium
+           bg-brand-black-900 text-white font-bold
+           rounded-none hover:bg-brand-black-800
+           shadow-subtle hover:shadow-deloitte
            transition-all duration-300 ease-in-out
            focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-2;
   }
 
   .btn-secondary {
     @apply inline-flex items-center justify-center px-8 py-4
-           bg-transparent text-brand-navy-900 font-semibold
-           rounded-none border-2 border-brand-navy-900
-           hover:bg-brand-navy-900 hover:text-white
+           bg-brand-secondary text-white font-bold
+           rounded-none hover:bg-brand-green-600
+           shadow-subtle hover:shadow-deloitte
            transition-all duration-300 ease-in-out
-           focus:outline-none focus:ring-2 focus:ring-brand-navy-900 focus:ring-offset-2;
+           focus:outline-none focus:ring-2 focus:ring-brand-black-900 focus:ring-offset-2;
   }
 
-  /* Premium cards */
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-4
+           bg-transparent text-brand-black-900 font-bold
+           rounded-none border-2 border-brand-black-900
+           hover:bg-brand-black-900 hover:text-white
+           transition-all duration-300 ease-in-out
+           focus:outline-none focus:ring-2 focus:ring-brand-black-900 focus:ring-offset-2;
+  }
+
+  /* Deloitte cards */
   .card {
     @apply bg-white rounded-none p-8
-           shadow-subtle hover:shadow-premium
+           shadow-subtle hover:shadow-deloitte
            transition-shadow duration-300
            border-l-4 border-brand-secondary;
   }
 
   .stat-card {
     @apply bg-white rounded-none p-10 text-center
-           border-t-4 border-brand-navy-900
+           border-t-4 border-brand-black-900
            shadow-subtle;
   }
 
@@ -191,12 +200,12 @@
   @apply transition-shadow duration-300 hover:shadow-premium;
 }
 
-/* Premium focus states */
+/* Deloitte focus states */
 *:focus-visible {
   @apply outline-none ring-2 ring-brand-secondary ring-offset-2;
 }
 
-/* Selection color */
+/* Selection color - Deloitte green */
 ::selection {
   @apply bg-brand-secondary text-white;
 }

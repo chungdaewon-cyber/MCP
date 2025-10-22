@@ -10,37 +10,37 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          // McKinsey-inspired Deep Navy palette
-          navy: {
-            50: '#F0F4F8',
-            100: '#D9E2EC',
-            200: '#BCCCDC',
-            300: '#9FB3C8',
-            400: '#829AB1',
-            500: '#627D98',
-            600: '#486581',
-            700: '#334E68',
-            800: '#243B53',
-            900: '#001E3C',  // Primary - McKinsey Deep Blue
+          // Deloitte-inspired Black palette
+          black: {
+            50: '#F7F7F7',
+            100: '#E3E3E3',
+            200: '#C7C7C7',
+            300: '#A4A4A4',
+            400: '#818181',
+            500: '#666666',
+            600: '#515151',
+            700: '#434343',
+            800: '#1A1A1A',
+            900: '#000000',  // Primary - Pure Black
           },
-          // Professional Blue accents
-          blue: {
-            50: '#E6F0FF',
-            100: '#CCE0FF',
-            200: '#99C2FF',
-            300: '#66A3FF',
-            400: '#3385FF',
-            500: '#0066CC',  // Secondary - Professional Blue
-            600: '#0052A3',
-            700: '#003D7A',
-            800: '#002952',
-            900: '#001429',
+          // Deloitte Green accents
+          green: {
+            50: '#F5FBE9',
+            100: '#E8F5D0',
+            200: '#D5ECA5',
+            300: '#BFE375',
+            400: '#A8D94D',
+            500: '#86BC24',  // Secondary - Deloitte Green
+            600: '#6B9B1E',
+            700: '#4F7516',
+            800: '#364F0F',
+            900: '#1E2B08',
           },
-          // Trust & Innovation
-          primary: '#001E3C',    // Deep Navy
-          secondary: '#0066CC',  // Professional Blue
-          accent: '#0052A3',     // Deeper Blue
-          success: '#00693E',    // BCG-inspired Green
+          // Core colors
+          primary: '#000000',    // Pure Black
+          secondary: '#86BC24',  // Deloitte Green
+          accent: '#6B9B1E',     // Darker Green
+          success: '#86BC24',    // Deloitte Green
           warning: '#F59E0B',    // Amber
           // Sophisticated grays
           gray: {
@@ -58,11 +58,11 @@ const config: Config = {
         },
       },
       fontFamily: {
-        // Premium typography system
-        serif: ['Playfair Display', 'Georgia', 'Cambria', 'Times New Roman', 'serif'],
-        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        display: ['Playfair Display', 'Georgia', 'serif'],
-        body: ['Inter', 'sans-serif'],
+        // Deloitte-inspired typography (Bold, sans-serif)
+        serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
+        sans: ['Arial', 'Helvetica Neue', 'Helvetica', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['Arial Black', 'Arial Bold', 'Arial', 'sans-serif'],
+        body: ['Arial', 'Helvetica', 'sans-serif'],
       },
       fontSize: {
         // Refined type scale
@@ -75,16 +75,18 @@ const config: Config = {
       backgroundImage: {
         'grid-pattern': `linear-gradient(to right, #E5E7EB 1px, transparent 1px),
                         linear-gradient(to bottom, #E5E7EB 1px, transparent 1px)`,
-        'premium-gradient': 'linear-gradient(135deg, #001E3C 0%, #0066CC 100%)',
+        'premium-gradient': 'linear-gradient(135deg, #000000 0%, #86BC24 100%)',
         'subtle-gradient': 'linear-gradient(180deg, #F9FAFB 0%, #FFFFFF 100%)',
+        'deloitte-gradient': 'linear-gradient(135deg, #000000 0%, #1A1A1A 50%, #86BC24 100%)',
       },
       backgroundSize: {
         'grid': '60px 60px',
       },
       boxShadow: {
-        'premium': '0 20px 25px -5px rgba(0, 30, 60, 0.1), 0 10px 10px -5px rgba(0, 30, 60, 0.04)',
-        'premium-lg': '0 25px 50px -12px rgba(0, 30, 60, 0.25)',
-        'subtle': '0 1px 3px 0 rgba(0, 30, 60, 0.08), 0 1px 2px 0 rgba(0, 30, 60, 0.06)',
+        'premium': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+        'premium-lg': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+        'subtle': '0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+        'deloitte': '0 10px 20px -5px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(134, 188, 36, 0.1)',
       },
       letterSpacing: {
         'tighter': '-0.05em',

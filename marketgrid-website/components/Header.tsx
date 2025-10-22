@@ -29,10 +29,10 @@ export default function Header() {
               priority
             />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-brand-dark">
-                Market<span className="text-brand-secondary">grid</span>
+              <span className="text-xl font-black text-brand-black-900">
+                MARKET<span className="text-brand-secondary">GRID</span>
               </span>
-              <span className="text-xs text-gray-500 tracking-wider">AI DEMAND INTELLIGENCE</span>
+              <span className="text-xs text-gray-600 tracking-widest font-semibold">AI DEMAND INTELLIGENCE</span>
             </div>
           </Link>
 
@@ -42,12 +42,12 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-gray-700 hover:text-brand-secondary transition-colors"
+                className="text-sm font-bold text-gray-800 hover:text-brand-secondary transition-colors"
               >
                 {item.name}
               </Link>
             ))}
-            <Link href="/contact" className="btn-primary text-sm">
+            <Link href="/contact" className="btn-secondary text-sm">
               무료 상담 신청
             </Link>
           </div>
@@ -75,14 +75,14 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-brand-light rounded-lg transition-colors"
+                className="block px-4 py-2 text-sm font-bold text-gray-800 hover:bg-brand-green-50 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
               </Link>
             ))}
             <div className="px-4 pt-2">
-              <Link href="/contact" className="btn-primary w-full text-sm" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/contact" className="btn-secondary w-full text-sm" onClick={() => setMobileMenuOpen(false)}>
                 무료 상담 신청
               </Link>
             </div>
